@@ -63,7 +63,7 @@
     background: #c81f43;
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 1100.98px) {
 
     .banner{
         background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
@@ -133,7 +133,7 @@ a:hover{
     color: #c81f43;
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 1149.98px) {
     .nav-items{
         display: none;
     }
@@ -174,21 +174,24 @@ a:hover{
 .featured-items-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
     gap: 20px;
 }
 
 .featured-images{
-    max-height: 330px;
+    max-height: 100%;
+}
+
+.featured-image-container>img{
+    width: 100%;
+    height: auto;
 }
 
 .featured-items{
     width: 100%;
-    height: 350px;
 }
 
 .featured-image-container{
-    border-radius: 300px 300px 0px 0px;
+    border-radius: 50% 50% 0px 0px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -210,7 +213,7 @@ a:hover{
 
 .featured-items-names{
     color: #272727;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-decoration-line: underline;
     padding: 10px;
@@ -231,6 +234,11 @@ a:hover{
 
     .featured-items-names{
         padding-bottom:200px;
+    }
+
+    .featured-image-container>img{
+        width: auto;
+        height: 95%;
     }
 }
 
@@ -316,6 +324,15 @@ a:hover{
     }
 }
 
+@media screen and (min-width:575.99px) and (max-width:992px) {
+
+    .products-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
 /* Our Features starts */
 
 .our-features{
@@ -371,6 +388,14 @@ span{
         height: auto;
         padding: 30px 0px;
     }
+
+    .hot-deal-image-container{
+        width: 100%;
+    }
+
+    .hot-deal-container>img{
+        width: 100%;
+    }
 }
 
 
@@ -405,6 +430,14 @@ span{
 
 }
 
+@media screen and (min-width:575.99px) and (max-width:992px) {
+
+    .instagram-images-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
 /* Latest Deals section starts */
 
 
@@ -428,6 +461,7 @@ span{
 .latest-deals-form{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
@@ -441,6 +475,23 @@ input{
     font-weight: 400;
 }
 
+input:focus {
+    border:2px solid #E55473;
+    color: #E55473;
+}
+
+@media screen and (max-width: 575.98px) {
+    .latest-deals-form{
+        flex-direction: column;
+    }
+    .latest-deals-text-container{
+        width: auto;
+    }
+    input{
+        width: 100%;
+    }
+    
+}
 
 /* Footer Section starts */
 
