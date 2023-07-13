@@ -181,9 +181,10 @@ a:hover{
     max-height: 100%;
 }
 
+
 .featured-image-container>img{
-    width: 100%;
-    height: auto;
+    height: 300px;
+    max-width: 100%;
 }
 
 .featured-items{
@@ -224,10 +225,11 @@ a:hover{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 0px auto;
+        width: 300px;
     }
 
     .featured-items{
-        width: 100%;
+        width: auto;
         height: 340px;
         margin-bottom: 30px;
     }
@@ -239,6 +241,11 @@ a:hover{
     .featured-image-container>img{
         width: auto;
         height: 95%;
+    }
+
+    .featured-container{
+        background: rgba(39, 39, 39, 0.05);
+        padding: 50px 0px;
     }
 }
 
